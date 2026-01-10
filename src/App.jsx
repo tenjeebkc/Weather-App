@@ -5,6 +5,8 @@ import './App.css'
 function App() {
   // State to store the city input by the user
   const [city, setCity] = useState("")
+  const [weather, setWeather] = useState(null)
+  
 
   // Function to handle the input change
   const handleInputChange = (e) =>{
