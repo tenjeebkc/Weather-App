@@ -3,8 +3,8 @@
 
 body {
   background:
-    linear-gradient(rgba(255, 255, 255, 0.111), rgba(255, 255, 255, 0.202)),
-    url('/skyimage.png');
+    linear-gradient(rgba(255, 255, 255, 0.495), rgba(255, 255, 255, 0.419)),
+    url('/skyimage.jpg');
   background-size: cover;
   background-position: center;
   color: white;

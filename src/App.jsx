@@ -27,6 +27,7 @@ function App() {
     try{
       const response = await fetch(url);
       const data = await response.json()
+      console.log(data)
       setWeather(data);
     }
     catch{
@@ -49,7 +50,9 @@ function App() {
       <div className='mt-5 bg-violet-600 rounded-2xl p-10'>
         <h2  className='text-3xl pb-2 font-bold'>{weather.name}</h2>
         <p className='text-5xl pb-3' >⛅</p>
-        <p className='pb-5  text-xl font-bold'>Temperature: {weather.main.temp}℃ </p>
+        <p className='pb-5  text-xl font-bold'>Temperature: {weather.main.temp} ℃ </p>
+        <p className='pb-5  text-xl font-bold'>Wind: {weather.wind.speed} m/s </p>
+
         <p className='text-xl font-bold'>Condition : {weather.weather[0].description}</p>
          </div>
     )}
